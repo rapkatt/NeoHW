@@ -1,10 +1,12 @@
 import UIKit
 
-// your code here
-func fibonacci(_ i: Int) -> Int{
-    if i <= 2{
-       return 1
+var number = 600851475143
+while 0 != number-1 {
+    if number % 2 == 0 || number % 3 == 0 || number % 5 == 0 || number % 7 == 0{
+        number -= 1
+        continue
     }else{
-        return fibonacci(i - 1) + fibonacci(i - 2)
-    }
+        print(number)
+        break
+        }
 }
